@@ -8,7 +8,7 @@ When guitar hero controllers are modded to use mechanical key switches on the fr
 
 I find the original fret buttons and colours iconic to the GH franchise, so when modifying a Wii LP and Wii GH5 guitar (Shout out to the Santroller project https://github.com/Santroller) the original fret buttons had to stay! This means modifying (RE: cutting) the back of the original fret buttons to make room for the mechanical key switch, This is typically achieved by hand or using a rotary tool (Dremel). However this process needs to be performed accurately/consistently to ensure uniform switch feel/travel across all five fret buttons, not easy with a rotary tool, very difficult by hand!
 
-This project allows for the bulk of the material to be removed from back of the fret (using what ever caveman era tools are deemed necessary) without needing to worry about dimensional accuracy (much easier with basic tools/hand tools). A combination of GHFretClearanceTestingToolGenerator.scad and GHFretInsertGenerator.scad (or the pre rendered stl's) can then be used to determine the correct clearance offset for your specific switch setup then generate five identical inserts and a setting tool to backfill the fret button and ensure consistency across all five.
+This project allows for the bulk of the material to be removed from back of the fret (using what ever caveman era tools are deemed necessary) without needing to worry about dimensional accuracy (much easier with basic tools/hand tools). A combination of [GHFretClearanceTestingToolGenerator.scad](OpenSCADFiles/GHFretClearanceTestingToolGenerator.scad) and [GHFretInsertGenerator.scad](OpenSCADFiles/GHFretInsertGenerator.scad) (or the pre rendered [stl's](STLs)) can then be used to determine the correct clearance offset for your specific switch setup then generate five identical inserts and a setting tool to backfill the fret button and ensure consistency across all five.
 
 To test a "worst case" scenario i.e a situation where only **basic** hand tools are available. I used a pair of stubby needle nose pliers to grab and twist material from the back of a fret in small chunks. Although this was time consuming, it was 100% effective and **very** easy to do! See the [images](#images) section (image 2 and 3) to see an absolutely butchered blue Wii LP fret with its perfect 6mm (ish) worth of switch clearance.
 
@@ -39,8 +39,9 @@ To test a "worst case" scenario i.e a situation where only **basic** hand tools 
 <img src="https://github.com/user-attachments/assets/94c0cae3-f275-4927-9b8d-1f613a734f3b" width=50% height=50%>
 
 
-3. **Modified with 6mm insert. Switch now has a consistant 6mm (ish) clearance down into the fret body, also hides the crimes committed in image 2.**
+3. **Modified with 6mm insert. Switch now has a consistent 6mm (ish) clearance down into the fret body, also hides the crimes committed in image 2.**
 
 <img src="https://github.com/user-attachments/assets/bb4329bd-ac38-4bf6-857f-eaec124af92a" width=50% height=50%>
 
 
+https://github.com/j4m3/GHFretInsertTool/blob/main/OpenSCAD/GHFretClearanceTestingToolGenerator.scad

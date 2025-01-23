@@ -5,8 +5,6 @@ generate_setting_tool = true; // Enable the generation of the setting tool. The 
 
 fret_depth = 13.2; //Internal depth  of the fret. The x and y dimensions of standard GH frets differs slightly between models however z appears to consistent. Measure the internal depth of your frets for accuracy. Unit = (mm).
 
-;
-
 //WHERE THE MAGIC HAPPENS
 
 $fa = 0.5;
