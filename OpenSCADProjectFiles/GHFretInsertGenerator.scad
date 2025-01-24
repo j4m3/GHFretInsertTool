@@ -1,5 +1,5 @@
 //CONFIG
-fret_clearance_depth = 2; //Clearance required at the back of the fret. Use GHFretClearanceTestingToolGenerator.scad to determine this. Unit = (mm).
+fret_clearance_depth = 2.2; //Clearance required at the back of the fret. Use GHFretClearanceTestingToolGenerator.scad to determine this. Unit = (mm).
 
 generate_setting_tool = true; // Enable the generation of the setting tool. The setting tool is used to ensure you have removed enough material from the fret and the insert is seated to your specified "fret_clearance_depth". If the setting tool does not bottom out on the back of the fret, more material needs to be removed. . Unit = (true/false).
 
@@ -43,6 +43,6 @@ module leg(){
 module setting_tool() { //SETTING TOOL GENERATOR
     cube([16, 15, 2]);
     translate([8,15]) cylinder(2, 8, 8);
-    translate([2.5,0,2]) cube([insert_w, insert_l, fret_clearance_depth]);
-    translate([(insert_w*0.5)+2.5,insert_l,2]) cylinder(fret_clearance_depth, insert_w*0.5, insert_w*0.5);
+    translate([2.5,1,2]) cube([insert_w, insert_l, fret_clearance_depth]);
+    translate([(insert_w*0.5)+2.5,(insert_l+1),2]) cylinder(fret_clearance_depth, insert_w*0.5, insert_w*0.5);
 }
