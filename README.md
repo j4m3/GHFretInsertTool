@@ -2,11 +2,9 @@
 
 # GHFretInsertTool (OpenSCAD Project)
 
-When guitar hero controllers are modded to use mechanical key switches on the fret buttons, modifications are generally required due to clearance issues between the back of the fret and the thicker mechanical switch. These modified frets are usually 3d printed, resin cast or original GH fret buttons that have been adapted to suit the specific switch setup.
+When guitar hero controllers are modded to use mechanical key switches on the fret buttons, modifications are generally required due to clearance issues between the back of the fret and the thicker mechanical switch. These modified frets are usually 3d printed, resin cast or original GH fret buttons that have been adapted to suit the specific switch setup. The modification of original fret buttons is typically achieved using a rotary tool (Dremel), drill or by hand. However, this process needs to be performed accurately/consistently to each fret button to ensure uniform switch feel/travel across all five buttons, not easy with a rotary tool, very difficult by hand!
 
 ## Project Info
-
-I find the original fret buttons and colours iconic to the GH franchise, so when modifying a Wii LP and Wii GH5 guitar (Shout out to the Santroller project https://github.com/Santroller) the original fret buttons had to stay! This means modifying (RE: cutting) the back of the original fret buttons to make room for the mechanical key switch, This is typically achieved by hand or using a rotary tool (Dremel). However this process needs to be performed accurately/consistently to ensure uniform switch feel/travel across all five fret buttons, not easy with a rotary tool, very difficult by hand!
 
 This project allows for the bulk of the material to be removed from back of the fret (using what ever caveman era tools are deemed necessary) without needing to worry about dimensional accuracy (much easier with basic tools/hand tools). A combination of [GHFretClearanceTestingToolGenerator.scad](OpenSCADFiles/GHFretClearanceTestingToolGenerator.scad) and [GHFretInsertGenerator.scad](OpenSCADFiles/GHFretInsertGenerator.scad) (or the pre rendered [stl's](STLs)) can then be used to determine the correct clearance offset for your specific switch setup then generate five identical inserts and a setting tool to backfill the fret button and ensure consistency across all five.
 
